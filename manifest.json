@@ -1,0 +1,33 @@
+{
+    "name": "Gladiatus Messenger",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "Messenger Extension for Gladiatus",
+    "icons": {
+        "16": "/images/icon_16x16.png",
+        "48": "/images/icon_48x48.png",
+        "128": "/images/icon_128x128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "/images/icon_16x16.png",
+            "48": "/images/icon_48x48.png",
+            "128": "/images/icon_128x128.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content_script.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

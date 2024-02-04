@@ -1,0 +1,73 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    color: #fff;
+    font-size: 18px;
+    height: 20px;
+}
+
+hr {
+    width: 100%;
+    opacity: 0.2;
+}
+
+#popup-container {
+    width: 600px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#load-messages-div {
+    all: initial;
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    color: #fff;
+    gap: 5px;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-item {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 20px 10px;
+    margin-bottom: 15px;
+}
+
+#messages-container {
+    height: 350px;
+    overflow-y: auto;
+}
+
+#send-msgs-button {
+    all: initial;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: black;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+}
